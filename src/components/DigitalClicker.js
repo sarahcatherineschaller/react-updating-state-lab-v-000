@@ -2,6 +2,7 @@ import React from 'react'
 
 export default class DigitalClicker extends React.Component {
   constructor() {
+    super()
     this.state = {
       timesClicked: 0
     }
@@ -15,8 +16,7 @@ export default class DigitalClicker extends React.Component {
 
   render() {
     return(
-      <button>//timesClicked
-      </button>
+      <button onClick={this.increment}>{this.state.timesClicked}</button>
     )
   }
 }
